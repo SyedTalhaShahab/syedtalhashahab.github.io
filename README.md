@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head></head>
+<html>
+<head>
+    
+</head>
 <body>
 
     <b> Alan Turing </b>
