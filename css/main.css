@@ -2096,7 +2096,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 #contact textarea {
-	min-height: 20rem;
+	min-height: 10rem;
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
