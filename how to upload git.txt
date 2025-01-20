@@ -1,0 +1,6 @@
+git init
+git commit -m "updated commit"
+git branch -M Work
+git remote add origin https://github.com/SyedTalhaShahab/syedtalha.git
+git push -u origin Work
+
