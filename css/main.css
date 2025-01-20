@@ -2036,7 +2036,7 @@ header .logo a {
 }
 #contact form {
 	margin-top: 0;
-	margin-bottom: 3rem;
+	margin-bottom: 0rem;
 }
 #contact form .form-field {
 	position: relative;
@@ -2096,7 +2096,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 #contact textarea {
-	min-height: 20rem;
+	min-height: 10rem;
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
