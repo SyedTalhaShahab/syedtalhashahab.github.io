@@ -1,652 +1,166 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Syed</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
-	<link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8" />
+  <title>Course Module Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
+  <header class="top-bar">
+    <div class="logo" aria-label="Course home">MyCanvas</div>
+    <nav class="top-nav" aria-label="Main navigation">
+      <button class="nav-tab active" data-view="video-view" aria-pressed="true">
+        Module Player
+      </button>
+      <button class="nav-tab" data-view="quiz-view" aria-pressed="false">
+        Weekly Quiz
+      </button>
+    </nav>
+  </header>
 
-<body id="top">
-	<header>
-		<div class="row">
-			<div class="top-bar">
-				<a class="menu-toggle" href="#"><span>Menu</span></a>
-				<div class="logo">
-					<a href="index.html">Syed</a>
-				</div>
-				<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll" href="#about" title="">About Me</a></li>
-						<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<section id="intro">
-		<div class="intro-overlay"></div>
-		<div class="intro-content">
-			<div class="row">
-				<div class="col-twelve">
-					<h5>Hello, World.</h5>
-					<h1>I'm Talha Shahab.</h1>
-					<p class="intro-position">
-						<span>Full Stack Developer</span>
-						<span>GMU Undergrad</span>
-					</p>
-					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-				</div>
-			</div>
-		</div>
-		<ul class="intro-social">
-			<li><a href="https://github.com/SyedTalhaShahab/Resume_AND_Cover_Letter/blob/Work/"><i
-						class="fa fa-github"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/talhashahab"><i class="fa fa-linkedin"></i></a></li>
-		</ul>
-	</section>
-	<section id="about">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>About Me</h5>
-				<h1>Let me introduce myself.</h1>
-				<div class="intro-info">
-					<img src="images/portfolio/selfie101.png" alt="Profile Picture">
-					<p class="lead">
-					<p class="lead">
-						I am a third-year Computer Science student at George Mason University with over four years of
-						hands-on experience in full-stack development. I have completed a variety of projects,
-						showcasing my expertise in multiple technologies and languages, including Java, Python,
-						JavaScript, Kotlin, Django, React, Node.js, and more.
-					</p>
-					<p class="lead">
-						I am deeply involved in every stage of the software development lifecycle; from planning and
-						design, I test and deploy code.  My strengths include utilizing data structures and algorithms
-						to solve complex problems and writing efficient code.
-					</p>
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="row button-section">
-			<div class="col-twelve">
-				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-				<a href="https://github.com/SyedTalhaShahab/Resume_AND_Cover_Letter/"
-					title="Download CV" class="button button-primary">Download CV</a>
-			</div>
-		</div>
-	</section>
-	<section id="resume" class="grey-section">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Resume</h5>
-				<h1>More of my credentials.</h1>
-				<p class="lead">
-				</p>
-			</div>
-		</div>
-		<div class="row resume-timeline">
-			<div class="col-twelve resume-header">
-				<h2>Education</h2>
-			</div>
-			<div class="col-twelve">
-				<div class="timeline-wrap">
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-						<div class="timeline-header">
-							<h3>High School Diploma</h3>
-							<p>Aug 2018 - June 2022</p>
-						</div>
-						<div class="timeline-content">
-							<h4>Gar-Field High School</h4>
-							<h5>Student Life:</h5>
-							<p>
-								Pursued the International Baccalaureate (IB) Diploma Program. It is a rigorous, two-year
-								educational program for high school juniors and seniors that emphasizes critical
-								thinking, global awareness, and interdisciplinary learning. It offers a balanced
-								curriculum including language, social studies, science, math, arts, second language,
-								along with the Extended Essay, Theory of Knowledge course, and Creativity, Activity,
-								Service (CAS) projects.
-							</p>
-						</div>
-					</div>
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-						<div class="timeline-header">
-							<h3>Bachelors, Applied CS</h3>
-							<p>Expected Diploma: May 2027</p>
-						</div>
-						<div class="timeline-content">
-							<h4>George Mason University</h4>
-							<h5>Student Life:</h5>
-							<p>
-								One of my recent projects was a Python-based typing game inspired by the classic arcade
-								game Galaga. This application leverages advanced principles like hash-chaining, adaptive
-								difficulty scaling, and collision detection to create an engaging and educational
-								experience for students. Currently, I am developing a Notes/Reminder application that
-								integrates REST APIs and SQL databases to help myself and others achieve their 2025
-								goals!
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="portfolio">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Portfolio</h5>
-				<h1>Check Out Some of My Works.</h1>
-			</div>
-		</div>
-		<div class="row portfolio-content">
-			<div class="col-twelve">
-				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-					<div class="bgrid folio-item">
-						<div class="item-wrap" style="height: 20% !important;">
-							<img src="images/portfolio/buffer.png" alt="">
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/blackjack.png" alt="">
-							<a href="#modal-01" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Blackjack</h3>
-										<span class="folio-types">
-											Made with JavaScript
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/leagacyBookStore.png" alt="">
-							<a href="#modal-02" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Legacy Book Store</h3>
-										<span class="folio-types">
-											Made with JavaScript
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/EndlessSandType.png" alt="">
-							<a href="#modal-03" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Endless Sand Type</h3>
-										<span class="folio-types">
-											Python App
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/space-shooter.png" alt="">
-							<a href="#modal-04" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Space Shooter</h3>
-										<span class="folio-types">
-											Python App
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/candy-crush.png" alt="">
-							<a href="#modal-05" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Candy Crush</h3>
-										<span class="folio-types">
-											Python Game
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Sodoku.png" alt="">
-							<a href="#modal-06" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Sudoku</h3>
-										<span class="folio-types">
-											Kotlin Game
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/DBeaver_PGAdmin4.png" alt="">
-							<a href="#modal-07" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">DBeaver PGAdmin4</h3>
-										<span class="folio-types">
-											Made with SQL, Python, JS, CSS, and HTML
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Chrome_Dino.png" alt="">
-							<a href="#modal-08" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Chrome Dino</h3>
-										<span class="folio-types">
-											Made with Processing
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Wordle.png" alt="">
-							<a href="#modal-09" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Wordle</h3>
-										<span class="folio-types">
-											Made with JavaScript
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Riu-Plaza-Stays.png" alt="">
-							<a href="#modal-10" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Riu Plaza Stays</h3>
-										<span class="folio-types">
-											Java Application
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Chess.png" alt="">
-							<a href="#modal-11" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Chess</h3>
-										<span class="folio-types">
-											Made with Python
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/minesweeper.png" alt="">
-							<a href="#modal-12" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Minesweeper</h3>
-										<span class="folio-types">
-											Made with Java
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/2048.png" alt="">
-							<a href="#modal-13" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">2048</h3>
-										<span class="folio-types">
-											Made with C#
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div id="modal-01" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/blackjack.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>BlackJack</h4>
-							<div class="categories">A popular card game where players compete against a dealer to get a
-								hand value as close to 21 as possible without exceeding it. Each card has a specific
-								value, and players can choose to "hit" to take another card or "stand" to keep their
-								current hand. Strategic decision-making and probability analysis make this a classic
-								game of skill and chance.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/BlackJack">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-02" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/leagacyBookStore.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Legacy Book Store</h4>
-							<div class="categories">A fictional or thematic bookstore concept that could evoke nostalgia
-								or focus on antique, rare, or historical books. It offers a charming ambiance with
-								vintage decor and curated collections of old tomes. The store might also cater to book
-								lovers seeking a unique experience, including reading nooks and storytelling sessions.
-							</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Legacy-BookStore">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-03" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/EndlessSandType.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Endless Sand Type</h4>
-							<div class="categories">An expansive strategy or simulation game
-								where players explore and colonize vast, procedurally generated universes. Players
-								manage resources, expand territories, and build civilizations or fleets in a
-								sandbox-like environment. Such games often emphasize creativity, exploration, and
-								long-term planning.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Endless-Sand-Type">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-04" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/space-shooter.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Space Shooter</h4>
-							<div class="categories">An action-packed game genre where players control a spaceship and
-								battle waves of enemies in outer space. These games typically feature fast-paced
-								gameplay, upgrades, and challenging boss fights. They are often visually stunning, with
-								colorful explosions and a futuristic theme.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/space-shooter">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-05" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/candy-crush.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Candy Crush</h4>
-							<div class="categories">A highly popular puzzle game where players match three or more
-								candies of the same color to clear levels. With hundreds of levels, it introduces
-								challenges like breaking obstacles or collecting specific items. The game is easy to
-								learn but progressively difficult, offering a casual yet addictive experience.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/candy-crush">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-06" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/Sodoku.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Sudoku</h4>
-							<div class="categories">A number puzzle game played on a 9x9 grid, where the goal is to fill
-								in numbers from 1 to 9 so that each row, column, and 3x3 sub-grid contains no
-								duplicates. It requires logical thinking and patience, making it a great mental
-								exercise. Players often find it both challenging and meditative.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Sudoku">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-07" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/DBeaver_PGAdmin4.png" alt="" />
-						</div>
-						<div class="description-box">
-							<div class="categories">
-								The Movie Database Search Engine is a robust full-stack application designed for
-								managing and exploring movie records with ease. It reads data from an Excel file and
-								populates DBeaver and PostgreSQL databases to ensure seamless data handling and storage.
-								Users can create and delete movie entries, perform searches using customizable filters,
-								and sort results based on various attributes like genre, release year, or rating. With
-								its intuitive interface, the tool offers efficient database interaction and powerful
-								query capabilities for movie enthusiasts and database administrators alike.
-							</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/DBeaver-and-PGAdmin-4-Database">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-08" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/Chrome_Dino.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Chrome Dino</h4>
-							<div class="categories">A simple endless runner game built into the Google Chrome browser
-								that activates when there’s no internet connection. Players control a pixelated dinosaur
-								and must jump over cacti and duck under pterodactyls to score points. It’s a fun and
-								lightweight distraction during connectivity issues.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Chrome_Dino">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-09" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/Wordle.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Wordle</h4>
-							<div class="categories">A daily word puzzle where players guess a five-letter word in six
-								tries or less. After each guess, letters are highlighted to show if they are in the word
-								and in the correct position. Its simplicity and social sharing feature have made it a
-								viral sensation.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Wordle">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-10" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/Riu-Plaza-Stays.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Riu Plaza Stays</h4>
-							<div class="categories">The experience of staying at Riu Plaza hotels, known for luxury and
-								convenience in urban locations. These stays often include modern amenities, exceptional
-								service, and central proximity to major attractions. Ideal for both business travelers
-								and tourists seeking comfort and style.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Riu-Plaza-Stays">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-11" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/Chess.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Chess</h4>
-							<div class="categories">An ancient strategy board game played between two players, aiming to
-								checkmate the opponent's king. Each piece has unique movements, requiring players to
-								think ahead and strategize. It’s a timeless game that sharpens cognitive skills and has
-								a deep cultural and competitive history.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Chess">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-12" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/minesweeper.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>Minesweeper</h4>
-							<div class="categories">A classic logic-based game where players uncover tiles on a grid
-								while avoiding hidden mines. Numbers on revealed tiles indicate how many mines are
-								adjacent, guiding the player to safe tiles. The game balances strategy and risk-taking,
-								offering an engaging puzzle experience.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/Minesweeper">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-					<div id="modal-13" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/2048.png" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>2048</h4>
-							<div class="categories">A sliding tile puzzle game where players combine numbered tiles to
-								reach the sum of 2048. Players can swipe tiles in four directions, merging like numbers
-								while planning moves to avoid filling the grid. It’s simple to understand yet requires
-								strategic thinking to master.</div>
-						</div>
-						<div class="link-box">
-							<a href="https://github.com/SyedTalhaShahab/2048">download</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Contact</h5>
-				<h1>I'd Love To Hear From You.</h1>
-			</div>
-		</div>
-		<div class="row contact-form">
-			<div class="col-twelve">
-				<!-- modify this form HTML and place wherever you want your form -->
-				<form action="https://formspree.io/f/mdkkrrbq" method="POST">
-					<label>
-						Your email:
-						<input type="email" name="email">
-					</label>
-					<label>
-						Your message:
-						<textarea name="message"></textarea>
-					</label>
-					<!-- your other form fields go here -->
-					<button type="submit">Send</button>
-				</form>
-			</div>
-		</div>
-		<div class="row contact-info">
-			<div class="col-four tab-full">
-				<div class="icon">
-					<i class="icon-pin"></i>
-				</div>
-				<h5>What I call home</h5>
-				<p>
-					Woodbridge, VA<br>
-					22193 US<br>
-				</p>
-			</div>
-			<div class="col-four tab-full collapse">
-				<div class="icon">
-					<i class="icon-mail"></i>
-				</div>
-				<h5>Email Me At</h5>
-				<p>
-					csjobtalha@gmail.com<br>
-					tshahab@gmu.edu<br>
-				</p>
-			</div>
-			<div class="col-four tab-full">
-				<div class="icon">
-					<i class="icon-phone"></i>
-				</div>
-				<h5>Call Me At</h5>
-				<p>
-					Phone: +1 (571) 513 9489<br>
-					Whatsapp: +1 (571) 513 9489<br>
-				</p>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="row">
-			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-			</div>
-		</div>
-	</footer>
-	<div id="preloader">
-		<div id="loader"></div>
-	</div>
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+  <main class="main-content">
+    <!-- VIDEO + PLAYLIST + COMMENTS VIEW -->
+    <section id="video-view" class="view active" aria-label="Video module view">
+      <div class="layout-grid">
+        <!-- Playlist (Task 2) -->
+        <aside class="panel playlist-panel" aria-label="Playlist">
+          <h2 class="panel-title">Playlist</h2>
+          <ul id="playlist" class="playlist-list" role="listbox" aria-label="Video playlist">
+            <!-- Items are injected by JavaScript -->
+          </ul>
+        </aside>
+
+        <!-- Video + Description (Task 4) -->
+        <section class="panel video-panel">
+          <div class="video-wrapper" aria-label="Video player">
+            <div class="video-placeholder">
+              <p class="video-label">Now Playing</p>
+              <h1 id="video-title" class="video-title">Loading video...</h1>
+              <button id="play-button" class="primary-btn" type="button">
+                ▶ Play
+              </button>
+            </div>
+          </div>
+
+          <!-- Description clearly at the end/bottom of the screen -->
+          <article class="video-description" aria-label="Video description">
+            <h2>Description</h2>
+            <p id="video-description">
+              Video description will appear here.
+            </p>
+          </article>
+        </section>
+
+        <!-- Comment Side Panel (Task 3) -->
+        <aside class="panel comments-panel" aria-label="Comments">
+          <h2 class="panel-title">Comments</h2>
+          <div id="comment-list" class="comment-list" aria-live="polite">
+            <!-- Comments injected by JavaScript -->
+          </div>
+
+          <form id="comment-form" class="comment-form" aria-label="Add a comment">
+            <label for="comment-input" class="comment-label">Add a comment</label>
+            <textarea
+              id="comment-input"
+              class="comment-input"
+              rows="3"
+              placeholder="Share your thoughts about this video..."
+            ></textarea>
+            <button type="submit" class="secondary-btn">Post Comment</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- QUIZ VIEW (Task 1) -->
+    <section id="quiz-view" class="view" aria-label="Quiz view" hidden>
+      <div class="quiz-container">
+        <h1 class="quiz-title">Weekly Module Quiz</h1>
+        <p class="quiz-intro">
+          Answer the following questions based on this week's content, then click
+          <strong>Submit Quiz</strong> to see your score.
+        </p>
+
+        <form id="quiz-form" class="quiz-form">
+          <fieldset class="quiz-question">
+            <legend>1. Where can you find the video description in this interface?</legend>
+            <label>
+              <input type="radio" name="q1" value="a" />
+              At the top of the dashboard next to the logo.
+            </label>
+            <label>
+              <input type="radio" name="q1" value="b" />
+              In a pop-up that appears when you hover over the video.
+            </label>
+            <label>
+              <input type="radio" name="q1" value="c" />
+              At the bottom of the video player page in the Description section.
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz-question">
+            <legend>2. How do you switch to another lecture video?</legend>
+            <label>
+              <input type="radio" name="q2" value="a" />
+              By refreshing the page.
+            </label>
+            <label>
+              <input type="radio" name="q2" value="b" />
+              By clicking on a different item in the playlist on the left.
+            </label>
+            <label>
+              <input type="radio" name="q2" value="c" />
+              By submitting the quiz.
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz-question">
+            <legend>3. Where are comments shown while you watch a video?</legend>
+            <label>
+              <input type="radio" name="q3" value="a" />
+              In an overlay that blocks the video.
+            </label>
+            <label>
+              <input type="radio" name="q3" value="b" />
+              In a side panel on the right side of the screen.
+            </label>
+            <label>
+              <input type="radio" name="q3" value="c" />
+              In the browser's address bar.
+            </label>
+          </fieldset>
+
+          <fieldset class="quiz-question">
+            <legend>4. What is the first step to begin taking this quiz?</legend>
+            <label>
+              <input type="radio" name="q4" value="a" />
+              Click the <strong>Weekly Quiz</strong> tab in the top navigation.
+            </label>
+            <label>
+              <input type="radio" name="q4" value="b" />
+              Scroll to the very bottom of the comments panel.
+            </label>
+            <label>
+              <input type="radio" name="q4" value="c" />
+              Play the first video in the playlist.
+            </label>
+          </fieldset>
+
+          <button type="submit" class="primary-btn quiz-submit-btn">
+            Submit Quiz
+          </button>
+        </form>
+
+        <div id="quiz-result" class="quiz-result" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hi-Fi Prototype &mdash; Inspired by Canvas @ GMU</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
